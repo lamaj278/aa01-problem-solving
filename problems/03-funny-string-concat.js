@@ -20,10 +20,14 @@ at least 3 letters.)
 uses the String `substring` method--look it up on MDN!--and consists of only one 
 line inside the function block.
 */
+//Declare a function with 2 parameters: str1 and str2.
+function funnyStringConcat(str1, str2) {    //Declared the function with 2 parameters: str1, str2.
+// Return the parameters with a substring methods and a length method.
+    return str1.substring(0, 3) + str2.substring(str2.length - 3) //Returned the parameters with substring and dot length method. 
+}
 
-
-// console.log(funnyStringConcat("abc", "def"));  //=> "abcdef"
-// console.log(funnyStringConcat("number", "soldier"));  //=> "numier"
+console.log(funnyStringConcat("abc", "def"));  //=> "abcdef"
+console.log(funnyStringConcat("number", "soldier"));  //=> "numier"
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = funnyStringConcat;

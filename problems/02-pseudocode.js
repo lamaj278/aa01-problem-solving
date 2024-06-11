@@ -13,6 +13,12 @@ Given a number, write a function called within5Of100 to return true if the given
 number is within 5 of 100.
 */
 
+// Declare funtion with no parameters.
+function within5Of100(num) {   //funtion has been declared with a parameter of num.
+// return num.
+    return num >= 95 && num <= 105 //returning parameter num with comparison operators.
+}
+
 // console.log(within5Of100(94));  //=> false
 // console.log(within5Of100(95));  //=> true
 // console.log(within5Of100(100)); //=> true
